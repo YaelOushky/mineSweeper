@@ -1,0 +1,104 @@
+body{
+    background-image: url(../img/3.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    color:rgb(6, 43, 7);
+    text-align: center;
+    font-family:  'Passion One', cursive;
+    font-size: 25px;
+}
+
+table{
+    margin: auto ;
+    border: rgb(160, 98, 17);
+    border-style:solid;
+
+    border:none;
+    margin: auto ;
+    align-self: center;
+    vertical-align: bottom;
+    /* height: 740px;
+    width:740px; */
+    
+}
+
+.cell{
+    background-color: rgba(173, 103, 12, 0.74);
+    font-family:cursive; 
+     /* border-radius: 5px;  */
+     width: 35px;
+     height: 35px;
+     text-align: center;
+     transition: 0.5s;
+     font-family:  'Passion One', cursive;
+     border: 4px solid rgba(199, 122, 22, 0.493);
+  }
+  td:hover{
+      background-color: rgb(209, 169, 83);
+  }
+  .btn{
+    margin-top: 15px;
+    /* font-family:cursive; */
+    background-color: rgb(178, 226, 88);
+    /* border-style:hidden; */
+    padding: 7px;
+    border-radius: 10px;
+    font-size:12px;
+    margin-bottom: 20px;
+    font-family:  'Passion One', cursive;
+
+}
+
+.btn:hover{
+    background-color: rgba(182, 241, 127, 0.582);
+    transform: translateY(4px)
+}
+
+/* .btn:focus { */
+
+    /* transform: translateY(4px); */
+  /* } */
+
+.timer button{
+    font-family:  'Passion One', cursive;
+    background-color: rgb(209, 142, 55);
+    color:#163d07;
+    padding: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding:7px; */
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    
+}
+.mine button{
+    font-family:  'Passion One', cursive;
+    background-color: rgb(209, 142, 55);
+    color:#163d07;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* padding:7px; */
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.selected {
+    /* background-color: rgb(138, 99, 27); */
+    background-color: rgba(228, 192, 92, 0.678);
+}
+
+.hide{
+    display: none;
+}
+.emoji{
+    background-color: inherit;
+    border: none;
+    font-size: 35px;
+}
+.emoji:hover{
+    transform: translateY(1px)
+}
