@@ -88,7 +88,7 @@ table{
 
 .selected {
     /* background-color: rgb(138, 99, 27); */
-    background-color: rgba(228, 192, 92, 0.678);
+    background-color: rgba(247, 191, 38, 0.959);
 }
 
 .hide{
@@ -97,8 +97,12 @@ table{
 .emoji{
     background-color: inherit;
     border: none;
-    font-size: 35px;
+    font-size: 40px;
 }
 .emoji:hover{
-    transform: translateY(1px)
+    transform: translateY(3px)
+}
+.marked{
+    background-color: orange;
+    /* cursor: grab; */
 }
