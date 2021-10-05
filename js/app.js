@@ -21,7 +21,6 @@ var gGame = {
     secsPassed: 0
 }
 
-
 var gSoundStartGame = new Audio('sound/start-game.wav')
 var gSoundMine = new Audio('sound/mine.mp3')
 var gSoundGameOver = new Audio('sound/game-over.wav')
@@ -51,11 +50,6 @@ function setLevel(size, mines) {
     gLevel['MINES'] = mines
     var elMines = document.querySelector('.bomes')
     elMines.innerText = mines
-    restartGame()
-}
-
-function restartGame() {
-    gLife = 3
     init()
 }
 
@@ -69,14 +63,13 @@ function endGame() {
 
     }
     if (!gGame.isOn) clearInterval(gGameInterval)
-    // createMine(gBoard, gLevel.MINES)
 }
 
 function checkGameOver() {
     if (gGame.shownCount === gLevel.SIZE * gLevel.SIZE) {
 
         document.querySelector('.emoji').innerText = '😎' // win
-        restartGame()
+        endGame()
     }
     //  LOSE: when clicking a mine, all mines should be revealed
     //  WIN: all the mines are flagged, and all the other cells are shown
@@ -84,7 +77,6 @@ function checkGameOver() {
 
 
 function cellClicked(i, j, elCell, event) {
-    console.log(elCell);
     if (!gGame.isOn) return
 
     if (!gFirstClick) {
@@ -112,9 +104,6 @@ function cellClicked(i, j, elCell, event) {
             endGame()
 
         }
-        // if (gBoard[i][j].minesAroundCount === 0) {
-        //     openAllNeighbors(i, j, gBoard, event)
-        // }
     }
     if (event.button === 2) {
         // event.preventDefault()
@@ -127,7 +116,6 @@ function cellClicked(i, j, elCell, event) {
         }
 
     }
-    // elCell.classList.add('selected')
     checkGameOver()
     renderBoard(gBoard)
 }
@@ -157,7 +145,7 @@ function renderBoard(board) {
     var elBoard = document.querySelector('.board')
     elBoard.innerHTML = strHTML
 
-    var Board = document.querySelector('.board') //  rightckick
+    var Board = document.querySelector('.board') //  right click
     Board.addEventListener('contextmenu', e => {
         e.preventDefault()
     })
