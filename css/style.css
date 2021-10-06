@@ -8,7 +8,7 @@ body{
     min-height: 100vh;
     color:rgb(0, 34, 1);
     text-align: center;
-    font-family:  'Passion One', cursive;
+    font-family:'Passion One', cursive;
     font-size: 25px;
 }
 
@@ -46,11 +46,11 @@ table{
      border: 4px solid  rgb(131, 80, 4);
   }
 
-  td:hover{
+td:hover{
       background-color: rgb(219, 168, 58);
   }
 
-  .btn{
+.btn{
     margin-top: 15px;
     font-family:cursive;
     background-color: rgb(178, 226, 88);
@@ -94,14 +94,6 @@ table{
     border: none;
 }
 
-.selected {
-    background-color: rgba(37, 20, 4, 0.562);
-}
-
-.hide{
-    display: none;
-}
-
 .emoji{
     background-color: inherit;
     border: none;
@@ -110,13 +102,4 @@ table{
 
 .emoji:hover{
     transform: translateY(3px)
-}
-
-.marked{
-    background-color: orange;
-}
-
-h1{
-    font-size: 30px;
-    text-shadow: 5px 5px 0px #04581259 ;
 }
