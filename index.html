@@ -9,26 +9,33 @@
 </head>
 <body onload="init()">
 
-    <h1>Mine Sweeper Game</h1>
+    <img src="img/title.png">
 
-    <button class="emoji" onclick="init()"><span>😄</span></button>
+    <!-- <h1 > Mine Sweeper Game</h1> -->
+    <button class="emoji" onclick="setLevel(4,2)"><span>😄</span></button>
     
     <div class="level">
         <button class="btn" onclick="setLevel(4,2)">Beginner </button>
         <button class="btn" onclick="setLevel(8,12)">Medium </button>
         <button class="btn" onclick="setLevel(12,30)">Expert </button>
     </div>
+
     <table>
         <tbody class="board"></tbody>
-      </table>
+    </table>
 
-      <div class="mine">
-          <button > Bombs  left :<span class="bomes" >2</span> </button>
-          <button class="life"> Life: <span class="life" >3</span></button>
-        </div>
-        <div class="timer">
-            <button> <span class="time">🕔 00:00</span> </button>
-        </div>
+    <div class="mine">
+        <button > Bombs : <span class="bomes" >2</span> </button>
+        <button class="life"> Life : <span>3</span></button>
+    </div>
+
+    <div class="timer">
+       <button> <span class="time">🕔 00:00</span> </button>
+    </div>
+
+    <div>
+        <img src="img/yael oushky.png">
+    </div>
 
     <script src="js/util.js"></script>
     <script src="js/app.js"></script>

@@ -1,63 +1,73 @@
 body{
-    background-image: url(../img/3.jpg);
-    /* background-repeat: no-repeat; */
-    background-size: contain;
-    color:rgb(6, 43, 7);
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline:none;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    color:rgb(0, 34, 1);
     text-align: center;
     font-family:  'Passion One', cursive;
     font-size: 25px;
 }
 
+img{
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:block;
+    margin: auto;
+    padding-top: 30px;
+    }
+
 table{
     margin: auto ;
-    border: rgb(160, 98, 17);
+    border: rgb(131, 80, 4);
     border-style:solid;
-
     border:none;
     margin: auto ;
     align-self: center;
-    vertical-align: bottom;
-    /* height: 740px;
-    width:740px; */
-    
+    vertical-align: bottom;  
 }
 
 .cell{
-    background-color: rgba(173, 103, 12, 0.74);
+    background-color: rgba(147, 88, 0, 0.774);
     font-family:cursive; 
-     /* border-radius: 5px;  */
+     border-radius: 5px; 
      width: 35px;
      height: 35px;
      text-align: center;
      transition: 0.5s;
      font-family:  'Passion One', cursive;
-     border: 4px solid rgba(199, 122, 22, 0.493);
+     border: 4px solid  rgb(131, 80, 4);
   }
+
   td:hover{
-      background-color: rgb(209, 169, 83);
+      background-color: rgb(219, 168, 58);
   }
+
   .btn{
     margin-top: 15px;
-    /* font-family:cursive; */
+    font-family:cursive;
     background-color: rgb(178, 226, 88);
+    border: 10px;
+    border-color: rgba(12, 85, 12, 0.651);
     /* border-style:hidden; */
     padding: 7px;
     border-radius: 10px;
     font-size:12px;
     margin-bottom: 20px;
     font-family:  'Passion One', cursive;
-
 }
 
 .btn:hover{
     background-color: rgba(182, 241, 127, 0.582);
     transform: translateY(4px)
 }
-
-/* .btn:focus { */
-
-    /* transform: translateY(4px); */
-  /* } */
 
 .timer button{
     font-family:  'Passion One', cursive;
@@ -68,41 +78,45 @@ table{
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    /* padding:7px; */
     margin-top: 15px;
     border-radius: 10px;
     border: none;
-    
 }
+
 .mine button{
     font-family:  'Passion One', cursive;
     background-color: rgb(209, 142, 55);
     color:#163d07;
     padding-bottom: 5px;
     padding-top: 5px;
-    /* padding:7px; */
     margin-top: 15px;
     border-radius: 10px;
     border: none;
 }
 
 .selected {
-    /* background-color: rgb(138, 99, 27); */
-    background-color: rgba(247, 191, 38, 0.959);
+    background-color: rgba(37, 20, 4, 0.562);
 }
 
 .hide{
     display: none;
 }
+
 .emoji{
     background-color: inherit;
     border: none;
     font-size: 40px;
 }
+
 .emoji:hover{
     transform: translateY(3px)
 }
+
 .marked{
     background-color: orange;
-    /* cursor: grab; */
+}
+
+h1{
+    font-size: 30px;
+    text-shadow: 5px 5px 0px #04581259 ;
 }

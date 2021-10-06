@@ -1,5 +1,5 @@
 'use strict'
-// פונקציית שכנים
+
 function checkCount(mat, rowIdx, colIdx) {
     var count = 0;
     for (var i = rowIdx - 1; i <= rowIdx + 1; i++) {
