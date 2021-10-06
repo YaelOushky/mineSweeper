@@ -33,11 +33,11 @@ function init() {
     gGame.shownCount = 0
     gGame.markedCount = 0
     gFirstClick = false
+    clearInterval(gGameInterval)
     document.querySelector('.emoji').innerText = '😄'
     document.querySelector('.time').innerText = '🕔 00:00'
     document.querySelector('.life span').innerText = gLife
     document.querySelector('.mine span').innerText = gLevel.MINES
-    clearInterval(gGameInterval)
     gBoard = createBoard(gLevel.SIZE)
     renderBoard(gBoard)
 }
@@ -50,7 +50,10 @@ function checkLose() {
         gGame.isOn = false
         document.querySelector('.emoji').innerText = '😭'
     }
-    if (!gGame.isOn) showAll(gBoard)
+    if (!gGame.isOn){
+        showAll(gBoard)
+        clearInterval(gGameInterval)
+    }
 }
 
 function checkVictory(i, j) {
@@ -59,6 +62,7 @@ function checkVictory(i, j) {
     var emptyCellsNum = gLevel.SIZE * gLevel.SIZE - gLevel.MINES // 14/52/114
     if (gGame.shownCount === emptyCellsNum && gGame.markedCount === gLevel.MINES || !gLevel.MINES || gBoard[i][j].isMine && gBoard[i][j].isMarked && gGame.markedCount === gLevel.MINES) {
 
+        clearInterval(gGameInterval)
         document.querySelector('.emoji').innerText = '😎' 
         gSoundWin.play()
         gGame.isOn = false
